@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService3";
+
+package greet;
+
+
+
+// The greeting service definition.
+service Greeter { 
+  rpc GuardarDatos (requestGuardar) returns (replyTodo);
+ rpc AgregarInformacion (requestAgregar) returns (replyTodo);
+ rpc Devolverinformacion (requestGuardar) returns (replyTodo);
+}
+
+message requestGuardar {
+
+ map<string, string> mapaData = 1;
+   string cosas = 2;
+   string varios = 3;
+}
+
+message requestAgregar {
+    bytes archivos = 1;
+   string otros = 3;
+    map<string, string> mapaData = 4;
+}
+
+message replyTodo {
+  string message = 1;
+
+}
+
+/// es como una interface, 
+/// recibe como una calse que es
+// hellorequest y retorna
+// hellorepy

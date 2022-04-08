@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido!</h1>
+    <p>Llena los campos de abajo</p>
+</div>
+
+
+<form method= "post">
+    Nombre 1:
+    <input asp-for= "Nombre" />
+        Edad 1:
+    <input asp-for= "Edad" />
+
+        Nombre 2:
+    <input asp-for= "Nombre2" />
+            Edad 2:
+    <input asp-for= "Edad2" />
+        Nombre 3:
+    <input asp-for= "Nombre3" />
+            Edad 3:
+    <input asp-for= "Edad3" />
+    <button> Enviar</button>
+
+</form>
+
+<div>
+    Mensaje del servidor = @Model.Mensaje
+</div>
+
