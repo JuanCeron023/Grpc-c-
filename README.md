@@ -1,2 +1,2 @@
-# Grpc-c-
-grpc con c#
+# Grpc con c#
+ejemplo de grpc usando c#
